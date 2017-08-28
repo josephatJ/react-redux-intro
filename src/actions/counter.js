@@ -10,7 +10,7 @@ export function incrementIfOdd() {
     const { counter } = getState()
 
     if (counter % 2 === 0) {
-      return
+      return dispatch(decrement());
     }
 
     dispatch(increment())

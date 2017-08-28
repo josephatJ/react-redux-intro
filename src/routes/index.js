@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { CounterContainer } from 'containers'
 import { Header } from 'components'
+import { Apps } from 'components'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
@@ -12,6 +13,7 @@ class Routes extends Component {
       <Router>
         <Container>
           <Header />
+          <Apps />
           <Route path="/" component={CounterContainer} />
         </Container>
       </Router>
